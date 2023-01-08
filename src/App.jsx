@@ -8,6 +8,7 @@ import { useContext, useEffect } from 'react';
 import { index } from './controller/posts.controller';
 import Footer from './components/footer/footer';
 import PostPage from './pages/post/postPage';
+import NotFound from './components/notFound';
 
 function App() {
   const {setPosts} = useContext(PostsContext)
@@ -34,6 +35,7 @@ function App() {
     <Route
        path='/post-details/:id'
        element={<PostPage/>}/>
+       <Route path='*' element={<NotFound/>}/>
        
     </Routes>
     <Footer/>
