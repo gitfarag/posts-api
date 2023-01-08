@@ -4,6 +4,7 @@ import './post.css'
 import { Link } from 'react-router-dom';
 import { PostsContext } from "../../context/postsContext";
 import { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function PostCard({post}) {
   const{setPostInfo} = useContext(PostsContext)
@@ -20,7 +21,7 @@ function PostCard({post}) {
         <Card.Text>
         </Card.Text>
         <Button variant="primary" onClick={handleClick}>
-          <Link to={`/post-details/${post.id}`} className="readLink">read post</Link>
+          <NavLink to={`/post-details/${post.id}`} className="readLink">read post</NavLink>
         </Button>
       </Card.Body>
     </Card>
