@@ -1,0 +1,25 @@
+.a-card button{
+    border: none;
+    background-color:#553191 ;
+    color: white;
+    transition: 0.9s;
+}
+.post-title{
+    font-size: 16px;
+    max-height: 20px;
+    overflow: hidden;
+}
+.b-body{
+    transition: 0.3s;
+}
+.a-card:hover .b-body{
+    background-color: #553191;
+    transition: 0.3s;
+    color: white;
+}
+.a-card:hover button{
+    background-color: white;
+    transition: 0.9s;
+    color: #553191;
+
+}
