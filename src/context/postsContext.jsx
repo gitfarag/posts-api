@@ -1,3 +1,4 @@
+// this context for state manegement
 import React, { createContext, useState } from "react";
 
 export const PostsContext = createContext(null);

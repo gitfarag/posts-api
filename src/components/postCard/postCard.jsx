@@ -1,21 +1,17 @@
-import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { PostsContext } from '../../context/postsContext';
 import './post.css'
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { PostsContext } from "../../context/postsContext";
+import { useContext } from 'react';
 
 function PostCard({post}) {
-  const {setPostInfo} = useContext(PostsContext)
-  const navigate = useNavigate()
-  const handleClick = (e)=>{
-      e.preventDefault()
-      console.log('clicked')
-      setPostInfo(post)
-      navigate('/post-details')
-      window.scrollTo(0,0)
+  const{setPostInfo} = useContext(PostsContext)
+  const handleClick = ()=>{
+    setPostInfo(post)
+    window.scrollTo(0,0)
   }
-  
+
   return (
     <Card className='m-4 a-card'>
       <Card.Img variant="top" src={`https://picsum.photos/600/300/?image=${post.id}`} />
@@ -23,7 +19,9 @@ function PostCard({post}) {
         <Card.Title className='post-title'>"{post.title}.."</Card.Title>
         <Card.Text>
         </Card.Text>
-        <Button variant="primary" onClick={(e)=>{handleClick(e)}}>Read Post</Button>
+        <Button variant="primary" onClick={handleClick}>
+          <Link to={`/post-details/${post.id}`} className="readLink">read post</Link>
+        </Button>
       </Card.Body>
     </Card>
   );

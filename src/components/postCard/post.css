@@ -23,3 +23,13 @@
     color: #553191;
 
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+    color: #553191;
+}

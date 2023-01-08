@@ -32,7 +32,7 @@ function App() {
        element={<Home/>}/>
 
     <Route
-       path='/post-details'
+       path='/post-details/:id'
        element={<PostPage/>}/>
        
     </Routes>
