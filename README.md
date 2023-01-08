@@ -16,7 +16,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:5173] to view it in your browser.
 
 ### `npm run build`
 
@@ -29,5 +29,5 @@ Your app is ready to be deployed!
 ### app url
 
 ```
-http://movie-bucket-2023.s3-website-us-east-1.amazonaws.com/
+http://posts-bucket.s3-website-us-east-1.amazonaws.com/
 ```
