@@ -11,6 +11,10 @@
 - React-Bootstrap
 - other React Hooks
 
+after intalling dependencies with
+
+### `npm i`
+
 In the project directory, you can run:
 
 ### `npm dev`
