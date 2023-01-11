@@ -15,7 +15,7 @@ function App() {
   const handlePosts = async()=>{
     try {
       const res = await index()
-      const data = await res.slice(1,9)
+      const data = await res.slice(0,9)
       setPosts(data)
     } catch (error) {
       console.log(error)
