@@ -32,7 +32,6 @@ const Pagesbar = () => {
         onClick={() => { handlePage(active + 1) }}
       />
       <Pagination.Last onClick={() => { handlePage(12) }} />
-
     </Pagination>
   )
 }

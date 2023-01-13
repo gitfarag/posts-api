@@ -7,6 +7,7 @@ import "./posts.css";
 
 const Posts = () => {
   const { posts } = useContext(PostsContext)
+  // fetch data
   return (
     <>
       <h2 className="posts-head">Featured Posts </h2>

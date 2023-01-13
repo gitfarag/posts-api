@@ -20,11 +20,7 @@ import { getPage } from "./posts.controller"
           setNext(page)
           setActive(page)
           setPosts(res)
-          
         }
-  
       }
-
-    
 
 export {handlePagination }
